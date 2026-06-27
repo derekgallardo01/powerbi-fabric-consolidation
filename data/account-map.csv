@@ -1,0 +1,16 @@
+entity,source_account,category
+KOA North,Site Fees,Revenue
+KOA North,Store Sales,Revenue
+KOA North,Staff Wages,Payroll
+KOA North,Ads,Marketing
+KOA North,Power & Water,Utilities
+KOA River,Camping Income,Revenue
+KOA River,Shop,Revenue
+KOA River,Payroll Exp,Payroll
+KOA River,Advertising,Marketing
+KOA River,Utilities Exp,Utilities
+KOA Pines,Lodging Revenue,Revenue
+KOA Pines,Retail,Revenue
+KOA Pines,Wages,Payroll
+KOA Pines,Marketing Spend,Marketing
+KOA Pines,Utilities,Utilities

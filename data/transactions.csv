@@ -1,0 +1,181 @@
+entity,date,source_account,amount
+KOA North,2025-01-15,Site Fees,19600.0
+KOA North,2025-01-15,Store Sales,8400.0
+KOA North,2025-01-15,Staff Wages,10500.0
+KOA North,2025-01-15,Ads,2800.0
+KOA North,2025-01-15,Power & Water,2100.0
+KOA North,2025-02-15,Site Fees,19600.0
+KOA North,2025-02-15,Store Sales,8400.0
+KOA North,2025-02-15,Staff Wages,10500.0
+KOA North,2025-02-15,Ads,2800.0
+KOA North,2025-02-15,Power & Water,2100.0
+KOA North,2025-03-15,Site Fees,23800.0
+KOA North,2025-03-15,Store Sales,10200.0
+KOA North,2025-03-15,Staff Wages,12750.0
+KOA North,2025-03-15,Ads,3400.0
+KOA North,2025-03-15,Power & Water,2550.0
+KOA North,2025-04-15,Site Fees,28000.0
+KOA North,2025-04-15,Store Sales,12000.0
+KOA North,2025-04-15,Staff Wages,15000.0
+KOA North,2025-04-15,Ads,4000.0
+KOA North,2025-04-15,Power & Water,3000.0
+KOA North,2025-05-15,Site Fees,30800.0
+KOA North,2025-05-15,Store Sales,13200.0
+KOA North,2025-05-15,Staff Wages,16500.0
+KOA North,2025-05-15,Ads,4400.0
+KOA North,2025-05-15,Power & Water,3300.0
+KOA North,2025-06-15,Site Fees,36400.0
+KOA North,2025-06-15,Store Sales,15600.0
+KOA North,2025-06-15,Staff Wages,19500.0
+KOA North,2025-06-15,Ads,5200.0
+KOA North,2025-06-15,Power & Water,3900.0
+KOA North,2026-01-15,Site Fees,21168.0
+KOA North,2026-01-15,Store Sales,9072.0
+KOA North,2026-01-15,Staff Wages,11340.0
+KOA North,2026-01-15,Ads,3024.0
+KOA North,2026-01-15,Power & Water,2268.0
+KOA North,2026-02-15,Site Fees,21168.0
+KOA North,2026-02-15,Store Sales,9072.0
+KOA North,2026-02-15,Staff Wages,11340.0
+KOA North,2026-02-15,Ads,3024.0
+KOA North,2026-02-15,Power & Water,2268.0
+KOA North,2026-03-15,Site Fees,25704.0
+KOA North,2026-03-15,Store Sales,11016.0
+KOA North,2026-03-15,Staff Wages,13770.0
+KOA North,2026-03-15,Ads,3672.0
+KOA North,2026-03-15,Power & Water,2754.0
+KOA North,2026-04-15,Site Fees,30240.0
+KOA North,2026-04-15,Store Sales,12960.0
+KOA North,2026-04-15,Staff Wages,16200.0
+KOA North,2026-04-15,Ads,4320.0
+KOA North,2026-04-15,Power & Water,3240.0
+KOA North,2026-05-15,Site Fees,33264.0
+KOA North,2026-05-15,Store Sales,14256.0
+KOA North,2026-05-15,Staff Wages,17820.0
+KOA North,2026-05-15,Ads,4752.0
+KOA North,2026-05-15,Power & Water,3564.0
+KOA North,2026-06-15,Site Fees,39312.0
+KOA North,2026-06-15,Store Sales,16848.0
+KOA North,2026-06-15,Staff Wages,21060.0
+KOA North,2026-06-15,Ads,5616.0
+KOA North,2026-06-15,Power & Water,4212.0
+KOA River,2025-01-15,Camping Income,15680.0
+KOA River,2025-01-15,Shop,6720.0
+KOA River,2025-01-15,Payroll Exp,8400.0
+KOA River,2025-01-15,Advertising,2240.0
+KOA River,2025-01-15,Utilities Exp,1680.0
+KOA River,2025-02-15,Camping Income,15680.0
+KOA River,2025-02-15,Shop,6720.0
+KOA River,2025-02-15,Payroll Exp,8400.0
+KOA River,2025-02-15,Advertising,2240.0
+KOA River,2025-02-15,Utilities Exp,1680.0
+KOA River,2025-03-15,Camping Income,19040.0
+KOA River,2025-03-15,Shop,8160.0
+KOA River,2025-03-15,Payroll Exp,10200.0
+KOA River,2025-03-15,Advertising,2720.0
+KOA River,2025-03-15,Utilities Exp,2040.0
+KOA River,2025-04-15,Camping Income,22400.0
+KOA River,2025-04-15,Shop,9600.0
+KOA River,2025-04-15,Payroll Exp,12000.0
+KOA River,2025-04-15,Advertising,3200.0
+KOA River,2025-04-15,Utilities Exp,2400.0
+KOA River,2025-05-15,Camping Income,24640.0
+KOA River,2025-05-15,Shop,10560.0
+KOA River,2025-05-15,Payroll Exp,13200.0
+KOA River,2025-05-15,Advertising,3520.0
+KOA River,2025-05-15,Utilities Exp,2640.0
+KOA River,2025-06-15,Camping Income,29120.0
+KOA River,2025-06-15,Shop,12480.0
+KOA River,2025-06-15,Payroll Exp,15600.0
+KOA River,2025-06-15,Advertising,4160.0
+KOA River,2025-06-15,Utilities Exp,3120.0
+KOA River,2026-01-15,Camping Income,16934.4
+KOA River,2026-01-15,Shop,7257.6
+KOA River,2026-01-15,Payroll Exp,9072.0
+KOA River,2026-01-15,Advertising,2419.2
+KOA River,2026-01-15,Utilities Exp,1814.4
+KOA River,2026-02-15,Camping Income,16934.4
+KOA River,2026-02-15,Shop,7257.6
+KOA River,2026-02-15,Payroll Exp,9072.0
+KOA River,2026-02-15,Advertising,2419.2
+KOA River,2026-02-15,Utilities Exp,1814.4
+KOA River,2026-03-15,Camping Income,20563.2
+KOA River,2026-03-15,Shop,8812.8
+KOA River,2026-03-15,Payroll Exp,11016.0
+KOA River,2026-03-15,Advertising,2937.6
+KOA River,2026-03-15,Utilities Exp,2203.2
+KOA River,2026-04-15,Camping Income,24192.0
+KOA River,2026-04-15,Shop,10368.0
+KOA River,2026-04-15,Payroll Exp,12960.0
+KOA River,2026-04-15,Advertising,3456.0
+KOA River,2026-04-15,Utilities Exp,2592.0
+KOA River,2026-05-15,Camping Income,26611.2
+KOA River,2026-05-15,Shop,11404.8
+KOA River,2026-05-15,Payroll Exp,14256.0
+KOA River,2026-05-15,Advertising,3801.6
+KOA River,2026-05-15,Utilities Exp,2851.2
+KOA River,2026-06-15,Camping Income,31449.6
+KOA River,2026-06-15,Shop,13478.4
+KOA River,2026-06-15,Payroll Exp,16848.0
+KOA River,2026-06-15,Advertising,4492.8
+KOA River,2026-06-15,Utilities Exp,3369.6
+KOA Pines,2025-01-15,Lodging Revenue,23520.0
+KOA Pines,2025-01-15,Retail,10080.0
+KOA Pines,2025-01-15,Wages,12600.0
+KOA Pines,2025-01-15,Marketing Spend,3360.0
+KOA Pines,2025-01-15,Utilities,2520.0
+KOA Pines,2025-02-15,Lodging Revenue,23520.0
+KOA Pines,2025-02-15,Retail,10080.0
+KOA Pines,2025-02-15,Wages,12600.0
+KOA Pines,2025-02-15,Marketing Spend,3360.0
+KOA Pines,2025-02-15,Utilities,2520.0
+KOA Pines,2025-03-15,Lodging Revenue,28560.0
+KOA Pines,2025-03-15,Retail,12240.0
+KOA Pines,2025-03-15,Wages,15300.0
+KOA Pines,2025-03-15,Marketing Spend,4080.0
+KOA Pines,2025-03-15,Utilities,3060.0
+KOA Pines,2025-04-15,Lodging Revenue,33600.0
+KOA Pines,2025-04-15,Retail,14400.0
+KOA Pines,2025-04-15,Wages,18000.0
+KOA Pines,2025-04-15,Marketing Spend,4800.0
+KOA Pines,2025-04-15,Utilities,3600.0
+KOA Pines,2025-05-15,Lodging Revenue,36960.0
+KOA Pines,2025-05-15,Retail,15840.0
+KOA Pines,2025-05-15,Wages,19800.0
+KOA Pines,2025-05-15,Marketing Spend,5280.0
+KOA Pines,2025-05-15,Utilities,3960.0
+KOA Pines,2025-06-15,Lodging Revenue,43680.0
+KOA Pines,2025-06-15,Retail,18720.0
+KOA Pines,2025-06-15,Wages,23400.0
+KOA Pines,2025-06-15,Marketing Spend,6240.0
+KOA Pines,2025-06-15,Utilities,4680.0
+KOA Pines,2026-01-15,Lodging Revenue,25401.6
+KOA Pines,2026-01-15,Retail,10886.4
+KOA Pines,2026-01-15,Wages,13608.0
+KOA Pines,2026-01-15,Marketing Spend,3628.8
+KOA Pines,2026-01-15,Utilities,2721.6
+KOA Pines,2026-02-15,Lodging Revenue,25401.6
+KOA Pines,2026-02-15,Retail,10886.4
+KOA Pines,2026-02-15,Wages,13608.0
+KOA Pines,2026-02-15,Marketing Spend,3628.8
+KOA Pines,2026-02-15,Utilities,2721.6
+KOA Pines,2026-03-15,Lodging Revenue,30844.8
+KOA Pines,2026-03-15,Retail,13219.2
+KOA Pines,2026-03-15,Wages,16524.0
+KOA Pines,2026-03-15,Marketing Spend,4406.4
+KOA Pines,2026-03-15,Utilities,3304.8
+KOA Pines,2026-04-15,Lodging Revenue,36288.0
+KOA Pines,2026-04-15,Retail,15552.0
+KOA Pines,2026-04-15,Wages,19440.0
+KOA Pines,2026-04-15,Marketing Spend,5184.0
+KOA Pines,2026-04-15,Utilities,3888.0
+KOA Pines,2026-05-15,Lodging Revenue,39916.8
+KOA Pines,2026-05-15,Retail,17107.2
+KOA Pines,2026-05-15,Wages,21384.0
+KOA Pines,2026-05-15,Marketing Spend,5702.4
+KOA Pines,2026-05-15,Utilities,4276.8
+KOA Pines,2026-06-15,Lodging Revenue,47174.4
+KOA Pines,2026-06-15,Retail,20217.6
+KOA Pines,2026-06-15,Wages,25272.0
+KOA Pines,2026-06-15,Marketing Spend,6739.2
+KOA Pines,2026-06-15,Utilities,5054.4
