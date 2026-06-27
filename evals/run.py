@@ -1,6 +1,7 @@
 """Run the consolidation engine against a golden numeric eval set.
 
-    python evals/run.py
+    python evals/run.py                                       # default: golden.json + data/
+    python evals/run.py golden-hospitality.json data-hospitality
 
 Exit code 0 if all cases pass, 1 otherwise. Each case targets one of the report
 shapes: consolidated totals, unmapped count, alert counts at a threshold,
@@ -31,7 +32,8 @@ def _check(case: dict, facts: list, budget: dict) -> tuple[bool, str]:
                 f"entities={actual} expected={case['expect']}")
 
     if kind == "unmapped_count":
-        _, unmapped = load_facts(os.path.join(ROOT, "data"))
+        data_dir = case.get("_data_dir", os.path.join(ROOT, "data"))
+        _, unmapped = load_facts(data_dir)
         return (len(unmapped) == case["expect"],
                 f"unmapped_count={len(unmapped)} expected={case['expect']}")
 
@@ -91,21 +93,40 @@ def _check(case: dict, facts: list, budget: dict) -> tuple[bool, str]:
     return (False, f"unknown check {kind!r}")
 
 
-def main() -> int:
-    with open(os.path.join(HERE, "golden.json"), encoding="utf-8") as fh:
+def main(argv: list[str] | None = None) -> int:
+    argv = argv if argv is not None else sys.argv[1:]
+    golden_name = argv[0] if len(argv) > 0 else "golden.json"
+    data_rel = argv[1] if len(argv) > 1 else "data"
+
+    golden_path = (golden_name if os.path.isabs(golden_name)
+                   else os.path.join(HERE, golden_name))
+    data_path = (data_rel if os.path.isabs(data_rel)
+                 else os.path.join(ROOT, data_rel))
+
+    with open(golden_path, encoding="utf-8") as fh:
         cases = json.load(fh)
-    facts, _ = load_facts(os.path.join(ROOT, "data"))
-    budget = load_budget(os.path.join(ROOT, "data"))
+    # Generator runs on demand for whichever dataset is being eval'd.
+    if not os.path.exists(os.path.join(data_path, "transactions.csv")):
+        if os.path.basename(data_path) == "data-hospitality":
+            import generate_data_hospitality
+            generate_data_hospitality.main()
+        else:
+            import generate_data
+            generate_data.main()
+    facts, _ = load_facts(data_path)
+    budget = load_budget(data_path)
 
     passed, failed = [], []
     for case in cases:
+        case["_data_dir"] = data_path
         ok, detail = _check(case, facts, budget)
         rec = {"id": case["id"], "detail": detail}
         (passed if ok else failed).append(rec)
 
     total = len(cases)
     rate = (len(passed) / total * 100) if total else 0.0
-    print(f"Eval: {len(passed)}/{total} passed ({rate:.0f}%)")
+    label = os.path.basename(golden_path)
+    print(f"Eval ({label}): {len(passed)}/{total} passed ({rate:.0f}%)")
     if failed:
         print(f"\n{len(failed)} failed:")
         for f in failed:

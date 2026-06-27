@@ -1,0 +1,181 @@
+entity,date,source_account,amount
+Marina Bay Suites,2025-01-15,Room Revenue,30030.0
+Marina Bay Suites,2025-01-15,F&B Revenue,12870.0
+Marina Bay Suites,2025-01-15,Salaries,17160.0
+Marina Bay Suites,2025-01-15,Marketing,4290.0
+Marina Bay Suites,2025-01-15,Energy,3510.0
+Marina Bay Suites,2025-02-15,Room Revenue,32532.5
+Marina Bay Suites,2025-02-15,F&B Revenue,13942.5
+Marina Bay Suites,2025-02-15,Salaries,18590.0
+Marina Bay Suites,2025-02-15,Marketing,4647.5
+Marina Bay Suites,2025-02-15,Energy,3802.5
+Marina Bay Suites,2025-03-15,Room Revenue,42542.5
+Marina Bay Suites,2025-03-15,F&B Revenue,18232.5
+Marina Bay Suites,2025-03-15,Salaries,24310.0
+Marina Bay Suites,2025-03-15,Marketing,6077.5
+Marina Bay Suites,2025-03-15,Energy,4972.5
+Marina Bay Suites,2025-04-15,Room Revenue,52552.5
+Marina Bay Suites,2025-04-15,F&B Revenue,22522.5
+Marina Bay Suites,2025-04-15,Salaries,30030.0
+Marina Bay Suites,2025-04-15,Marketing,7507.5
+Marina Bay Suites,2025-04-15,Energy,6142.5
+Marina Bay Suites,2025-05-15,Room Revenue,60060.0
+Marina Bay Suites,2025-05-15,F&B Revenue,25740.0
+Marina Bay Suites,2025-05-15,Salaries,34320.0
+Marina Bay Suites,2025-05-15,Marketing,8580.0
+Marina Bay Suites,2025-05-15,Energy,7020.0
+Marina Bay Suites,2025-06-15,Room Revenue,70070.0
+Marina Bay Suites,2025-06-15,F&B Revenue,30030.0
+Marina Bay Suites,2025-06-15,Salaries,40040.0
+Marina Bay Suites,2025-06-15,Marketing,10010.0
+Marina Bay Suites,2025-06-15,Energy,8190.0
+Marina Bay Suites,2026-01-15,Room Revenue,31531.5
+Marina Bay Suites,2026-01-15,F&B Revenue,13513.5
+Marina Bay Suites,2026-01-15,Salaries,18018.0
+Marina Bay Suites,2026-01-15,Marketing,4504.5
+Marina Bay Suites,2026-01-15,Energy,3685.5
+Marina Bay Suites,2026-02-15,Room Revenue,34159.12
+Marina Bay Suites,2026-02-15,F&B Revenue,14639.62
+Marina Bay Suites,2026-02-15,Salaries,19519.5
+Marina Bay Suites,2026-02-15,Marketing,4879.88
+Marina Bay Suites,2026-02-15,Energy,3992.62
+Marina Bay Suites,2026-03-15,Room Revenue,44669.62
+Marina Bay Suites,2026-03-15,F&B Revenue,19144.12
+Marina Bay Suites,2026-03-15,Salaries,25525.5
+Marina Bay Suites,2026-03-15,Marketing,6381.38
+Marina Bay Suites,2026-03-15,Energy,5221.12
+Marina Bay Suites,2026-04-15,Room Revenue,55180.12
+Marina Bay Suites,2026-04-15,F&B Revenue,23648.62
+Marina Bay Suites,2026-04-15,Salaries,31531.5
+Marina Bay Suites,2026-04-15,Marketing,7882.88
+Marina Bay Suites,2026-04-15,Energy,6449.62
+Marina Bay Suites,2026-05-15,Room Revenue,63063.0
+Marina Bay Suites,2026-05-15,F&B Revenue,27027.0
+Marina Bay Suites,2026-05-15,Salaries,36036.0
+Marina Bay Suites,2026-05-15,Marketing,9009.0
+Marina Bay Suites,2026-05-15,Energy,7371.0
+Marina Bay Suites,2026-06-15,Room Revenue,73573.5
+Marina Bay Suites,2026-06-15,F&B Revenue,31531.5
+Marina Bay Suites,2026-06-15,Salaries,42042.0
+Marina Bay Suites,2026-06-15,Marketing,10510.5
+Marina Bay Suites,2026-06-15,Energy,8599.5
+Lakeside Inn,2025-01-15,Lodging,20790.0
+Lakeside Inn,2025-01-15,Restaurant,8910.0
+Lakeside Inn,2025-01-15,Wages,11880.0
+Lakeside Inn,2025-01-15,Promo,2970.0
+Lakeside Inn,2025-01-15,Utilities,2430.0
+Lakeside Inn,2025-02-15,Lodging,22522.5
+Lakeside Inn,2025-02-15,Restaurant,9652.5
+Lakeside Inn,2025-02-15,Wages,12870.0
+Lakeside Inn,2025-02-15,Promo,3217.5
+Lakeside Inn,2025-02-15,Utilities,2632.5
+Lakeside Inn,2025-03-15,Lodging,29452.5
+Lakeside Inn,2025-03-15,Restaurant,12622.5
+Lakeside Inn,2025-03-15,Wages,16830.0
+Lakeside Inn,2025-03-15,Promo,4207.5
+Lakeside Inn,2025-03-15,Utilities,3442.5
+Lakeside Inn,2025-04-15,Lodging,36382.5
+Lakeside Inn,2025-04-15,Restaurant,15592.5
+Lakeside Inn,2025-04-15,Wages,20790.0
+Lakeside Inn,2025-04-15,Promo,5197.5
+Lakeside Inn,2025-04-15,Utilities,4252.5
+Lakeside Inn,2025-05-15,Lodging,41580.0
+Lakeside Inn,2025-05-15,Restaurant,17820.0
+Lakeside Inn,2025-05-15,Wages,23760.0
+Lakeside Inn,2025-05-15,Promo,5940.0
+Lakeside Inn,2025-05-15,Utilities,4860.0
+Lakeside Inn,2025-06-15,Lodging,48510.0
+Lakeside Inn,2025-06-15,Restaurant,20790.0
+Lakeside Inn,2025-06-15,Wages,27720.0
+Lakeside Inn,2025-06-15,Promo,6930.0
+Lakeside Inn,2025-06-15,Utilities,5670.0
+Lakeside Inn,2026-01-15,Lodging,21829.5
+Lakeside Inn,2026-01-15,Restaurant,9355.5
+Lakeside Inn,2026-01-15,Wages,12474.0
+Lakeside Inn,2026-01-15,Promo,3118.5
+Lakeside Inn,2026-01-15,Utilities,2551.5
+Lakeside Inn,2026-02-15,Lodging,23648.62
+Lakeside Inn,2026-02-15,Restaurant,10135.12
+Lakeside Inn,2026-02-15,Wages,13513.5
+Lakeside Inn,2026-02-15,Promo,3378.38
+Lakeside Inn,2026-02-15,Utilities,2764.12
+Lakeside Inn,2026-03-15,Lodging,30925.12
+Lakeside Inn,2026-03-15,Restaurant,13253.62
+Lakeside Inn,2026-03-15,Wages,17671.5
+Lakeside Inn,2026-03-15,Promo,4417.88
+Lakeside Inn,2026-03-15,Utilities,3614.62
+Lakeside Inn,2026-04-15,Lodging,38201.62
+Lakeside Inn,2026-04-15,Restaurant,16372.12
+Lakeside Inn,2026-04-15,Wages,21829.5
+Lakeside Inn,2026-04-15,Promo,5457.38
+Lakeside Inn,2026-04-15,Utilities,4465.12
+Lakeside Inn,2026-05-15,Lodging,43659.0
+Lakeside Inn,2026-05-15,Restaurant,18711.0
+Lakeside Inn,2026-05-15,Wages,24948.0
+Lakeside Inn,2026-05-15,Promo,6237.0
+Lakeside Inn,2026-05-15,Utilities,5103.0
+Lakeside Inn,2026-06-15,Lodging,50935.5
+Lakeside Inn,2026-06-15,Restaurant,21829.5
+Lakeside Inn,2026-06-15,Wages,29106.0
+Lakeside Inn,2026-06-15,Promo,7276.5
+Lakeside Inn,2026-06-15,Utilities,5953.5
+Highland Lodge,2025-01-15,Accommodation,23100.0
+Highland Lodge,2025-01-15,Food Service,9900.0
+Highland Lodge,2025-01-15,Labor,13200.0
+Highland Lodge,2025-01-15,Advertising,3300.0
+Highland Lodge,2025-01-15,Power,2700.0
+Highland Lodge,2025-02-15,Accommodation,25025.0
+Highland Lodge,2025-02-15,Food Service,10725.0
+Highland Lodge,2025-02-15,Labor,14300.0
+Highland Lodge,2025-02-15,Advertising,3575.0
+Highland Lodge,2025-02-15,Power,2925.0
+Highland Lodge,2025-03-15,Accommodation,32725.0
+Highland Lodge,2025-03-15,Food Service,14025.0
+Highland Lodge,2025-03-15,Labor,18700.0
+Highland Lodge,2025-03-15,Advertising,4675.0
+Highland Lodge,2025-03-15,Power,3825.0
+Highland Lodge,2025-04-15,Accommodation,40425.0
+Highland Lodge,2025-04-15,Food Service,17325.0
+Highland Lodge,2025-04-15,Labor,23100.0
+Highland Lodge,2025-04-15,Advertising,5775.0
+Highland Lodge,2025-04-15,Power,4725.0
+Highland Lodge,2025-05-15,Accommodation,46200.0
+Highland Lodge,2025-05-15,Food Service,19800.0
+Highland Lodge,2025-05-15,Labor,26400.0
+Highland Lodge,2025-05-15,Advertising,6600.0
+Highland Lodge,2025-05-15,Power,5400.0
+Highland Lodge,2025-06-15,Accommodation,53900.0
+Highland Lodge,2025-06-15,Food Service,23100.0
+Highland Lodge,2025-06-15,Labor,30800.0
+Highland Lodge,2025-06-15,Advertising,7700.0
+Highland Lodge,2025-06-15,Power,6300.0
+Highland Lodge,2026-01-15,Accommodation,24255.0
+Highland Lodge,2026-01-15,Food Service,10395.0
+Highland Lodge,2026-01-15,Labor,13860.0
+Highland Lodge,2026-01-15,Advertising,3465.0
+Highland Lodge,2026-01-15,Power,2835.0
+Highland Lodge,2026-02-15,Accommodation,26276.25
+Highland Lodge,2026-02-15,Food Service,11261.25
+Highland Lodge,2026-02-15,Labor,15015.0
+Highland Lodge,2026-02-15,Advertising,3753.75
+Highland Lodge,2026-02-15,Power,3071.25
+Highland Lodge,2026-03-15,Accommodation,34361.25
+Highland Lodge,2026-03-15,Food Service,14726.25
+Highland Lodge,2026-03-15,Labor,19635.0
+Highland Lodge,2026-03-15,Advertising,4908.75
+Highland Lodge,2026-03-15,Power,4016.25
+Highland Lodge,2026-04-15,Accommodation,42446.25
+Highland Lodge,2026-04-15,Food Service,18191.25
+Highland Lodge,2026-04-15,Labor,24255.0
+Highland Lodge,2026-04-15,Advertising,6063.75
+Highland Lodge,2026-04-15,Power,4961.25
+Highland Lodge,2026-05-15,Accommodation,48510.0
+Highland Lodge,2026-05-15,Food Service,20790.0
+Highland Lodge,2026-05-15,Labor,27720.0
+Highland Lodge,2026-05-15,Advertising,6930.0
+Highland Lodge,2026-05-15,Power,5670.0
+Highland Lodge,2026-06-15,Accommodation,56595.0
+Highland Lodge,2026-06-15,Food Service,24255.0
+Highland Lodge,2026-06-15,Labor,32340.0
+Highland Lodge,2026-06-15,Advertising,8085.0
+Highland Lodge,2026-06-15,Power,6615.0

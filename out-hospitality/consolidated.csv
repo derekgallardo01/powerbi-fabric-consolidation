@@ -1,0 +1,181 @@
+entity,year,month,category,amount
+Marina Bay Suites,2025,1,Revenue,30030.0
+Marina Bay Suites,2025,1,Revenue,12870.0
+Marina Bay Suites,2025,1,Payroll,17160.0
+Marina Bay Suites,2025,1,Marketing,4290.0
+Marina Bay Suites,2025,1,Utilities,3510.0
+Marina Bay Suites,2025,2,Revenue,32532.5
+Marina Bay Suites,2025,2,Revenue,13942.5
+Marina Bay Suites,2025,2,Payroll,18590.0
+Marina Bay Suites,2025,2,Marketing,4647.5
+Marina Bay Suites,2025,2,Utilities,3802.5
+Marina Bay Suites,2025,3,Revenue,42542.5
+Marina Bay Suites,2025,3,Revenue,18232.5
+Marina Bay Suites,2025,3,Payroll,24310.0
+Marina Bay Suites,2025,3,Marketing,6077.5
+Marina Bay Suites,2025,3,Utilities,4972.5
+Marina Bay Suites,2025,4,Revenue,52552.5
+Marina Bay Suites,2025,4,Revenue,22522.5
+Marina Bay Suites,2025,4,Payroll,30030.0
+Marina Bay Suites,2025,4,Marketing,7507.5
+Marina Bay Suites,2025,4,Utilities,6142.5
+Marina Bay Suites,2025,5,Revenue,60060.0
+Marina Bay Suites,2025,5,Revenue,25740.0
+Marina Bay Suites,2025,5,Payroll,34320.0
+Marina Bay Suites,2025,5,Marketing,8580.0
+Marina Bay Suites,2025,5,Utilities,7020.0
+Marina Bay Suites,2025,6,Revenue,70070.0
+Marina Bay Suites,2025,6,Revenue,30030.0
+Marina Bay Suites,2025,6,Payroll,40040.0
+Marina Bay Suites,2025,6,Marketing,10010.0
+Marina Bay Suites,2025,6,Utilities,8190.0
+Marina Bay Suites,2026,1,Revenue,31531.5
+Marina Bay Suites,2026,1,Revenue,13513.5
+Marina Bay Suites,2026,1,Payroll,18018.0
+Marina Bay Suites,2026,1,Marketing,4504.5
+Marina Bay Suites,2026,1,Utilities,3685.5
+Marina Bay Suites,2026,2,Revenue,34159.12
+Marina Bay Suites,2026,2,Revenue,14639.62
+Marina Bay Suites,2026,2,Payroll,19519.5
+Marina Bay Suites,2026,2,Marketing,4879.88
+Marina Bay Suites,2026,2,Utilities,3992.62
+Marina Bay Suites,2026,3,Revenue,44669.62
+Marina Bay Suites,2026,3,Revenue,19144.12
+Marina Bay Suites,2026,3,Payroll,25525.5
+Marina Bay Suites,2026,3,Marketing,6381.38
+Marina Bay Suites,2026,3,Utilities,5221.12
+Marina Bay Suites,2026,4,Revenue,55180.12
+Marina Bay Suites,2026,4,Revenue,23648.62
+Marina Bay Suites,2026,4,Payroll,31531.5
+Marina Bay Suites,2026,4,Marketing,7882.88
+Marina Bay Suites,2026,4,Utilities,6449.62
+Marina Bay Suites,2026,5,Revenue,63063.0
+Marina Bay Suites,2026,5,Revenue,27027.0
+Marina Bay Suites,2026,5,Payroll,36036.0
+Marina Bay Suites,2026,5,Marketing,9009.0
+Marina Bay Suites,2026,5,Utilities,7371.0
+Marina Bay Suites,2026,6,Revenue,73573.5
+Marina Bay Suites,2026,6,Revenue,31531.5
+Marina Bay Suites,2026,6,Payroll,42042.0
+Marina Bay Suites,2026,6,Marketing,10510.5
+Marina Bay Suites,2026,6,Utilities,8599.5
+Lakeside Inn,2025,1,Revenue,20790.0
+Lakeside Inn,2025,1,Revenue,8910.0
+Lakeside Inn,2025,1,Payroll,11880.0
+Lakeside Inn,2025,1,Marketing,2970.0
+Lakeside Inn,2025,1,Utilities,2430.0
+Lakeside Inn,2025,2,Revenue,22522.5
+Lakeside Inn,2025,2,Revenue,9652.5
+Lakeside Inn,2025,2,Payroll,12870.0
+Lakeside Inn,2025,2,Marketing,3217.5
+Lakeside Inn,2025,2,Utilities,2632.5
+Lakeside Inn,2025,3,Revenue,29452.5
+Lakeside Inn,2025,3,Revenue,12622.5
+Lakeside Inn,2025,3,Payroll,16830.0
+Lakeside Inn,2025,3,Marketing,4207.5
+Lakeside Inn,2025,3,Utilities,3442.5
+Lakeside Inn,2025,4,Revenue,36382.5
+Lakeside Inn,2025,4,Revenue,15592.5
+Lakeside Inn,2025,4,Payroll,20790.0
+Lakeside Inn,2025,4,Marketing,5197.5
+Lakeside Inn,2025,4,Utilities,4252.5
+Lakeside Inn,2025,5,Revenue,41580.0
+Lakeside Inn,2025,5,Revenue,17820.0
+Lakeside Inn,2025,5,Payroll,23760.0
+Lakeside Inn,2025,5,Marketing,5940.0
+Lakeside Inn,2025,5,Utilities,4860.0
+Lakeside Inn,2025,6,Revenue,48510.0
+Lakeside Inn,2025,6,Revenue,20790.0
+Lakeside Inn,2025,6,Payroll,27720.0
+Lakeside Inn,2025,6,Marketing,6930.0
+Lakeside Inn,2025,6,Utilities,5670.0
+Lakeside Inn,2026,1,Revenue,21829.5
+Lakeside Inn,2026,1,Revenue,9355.5
+Lakeside Inn,2026,1,Payroll,12474.0
+Lakeside Inn,2026,1,Marketing,3118.5
+Lakeside Inn,2026,1,Utilities,2551.5
+Lakeside Inn,2026,2,Revenue,23648.62
+Lakeside Inn,2026,2,Revenue,10135.12
+Lakeside Inn,2026,2,Payroll,13513.5
+Lakeside Inn,2026,2,Marketing,3378.38
+Lakeside Inn,2026,2,Utilities,2764.12
+Lakeside Inn,2026,3,Revenue,30925.12
+Lakeside Inn,2026,3,Revenue,13253.62
+Lakeside Inn,2026,3,Payroll,17671.5
+Lakeside Inn,2026,3,Marketing,4417.88
+Lakeside Inn,2026,3,Utilities,3614.62
+Lakeside Inn,2026,4,Revenue,38201.62
+Lakeside Inn,2026,4,Revenue,16372.12
+Lakeside Inn,2026,4,Payroll,21829.5
+Lakeside Inn,2026,4,Marketing,5457.38
+Lakeside Inn,2026,4,Utilities,4465.12
+Lakeside Inn,2026,5,Revenue,43659.0
+Lakeside Inn,2026,5,Revenue,18711.0
+Lakeside Inn,2026,5,Payroll,24948.0
+Lakeside Inn,2026,5,Marketing,6237.0
+Lakeside Inn,2026,5,Utilities,5103.0
+Lakeside Inn,2026,6,Revenue,50935.5
+Lakeside Inn,2026,6,Revenue,21829.5
+Lakeside Inn,2026,6,Payroll,29106.0
+Lakeside Inn,2026,6,Marketing,7276.5
+Lakeside Inn,2026,6,Utilities,5953.5
+Highland Lodge,2025,1,Revenue,23100.0
+Highland Lodge,2025,1,Revenue,9900.0
+Highland Lodge,2025,1,Payroll,13200.0
+Highland Lodge,2025,1,Marketing,3300.0
+Highland Lodge,2025,1,Utilities,2700.0
+Highland Lodge,2025,2,Revenue,25025.0
+Highland Lodge,2025,2,Revenue,10725.0
+Highland Lodge,2025,2,Payroll,14300.0
+Highland Lodge,2025,2,Marketing,3575.0
+Highland Lodge,2025,2,Utilities,2925.0
+Highland Lodge,2025,3,Revenue,32725.0
+Highland Lodge,2025,3,Revenue,14025.0
+Highland Lodge,2025,3,Payroll,18700.0
+Highland Lodge,2025,3,Marketing,4675.0
+Highland Lodge,2025,3,Utilities,3825.0
+Highland Lodge,2025,4,Revenue,40425.0
+Highland Lodge,2025,4,Revenue,17325.0
+Highland Lodge,2025,4,Payroll,23100.0
+Highland Lodge,2025,4,Marketing,5775.0
+Highland Lodge,2025,4,Utilities,4725.0
+Highland Lodge,2025,5,Revenue,46200.0
+Highland Lodge,2025,5,Revenue,19800.0
+Highland Lodge,2025,5,Payroll,26400.0
+Highland Lodge,2025,5,Marketing,6600.0
+Highland Lodge,2025,5,Utilities,5400.0
+Highland Lodge,2025,6,Revenue,53900.0
+Highland Lodge,2025,6,Revenue,23100.0
+Highland Lodge,2025,6,Payroll,30800.0
+Highland Lodge,2025,6,Marketing,7700.0
+Highland Lodge,2025,6,Utilities,6300.0
+Highland Lodge,2026,1,Revenue,24255.0
+Highland Lodge,2026,1,Revenue,10395.0
+Highland Lodge,2026,1,Payroll,13860.0
+Highland Lodge,2026,1,Marketing,3465.0
+Highland Lodge,2026,1,Utilities,2835.0
+Highland Lodge,2026,2,Revenue,26276.25
+Highland Lodge,2026,2,Revenue,11261.25
+Highland Lodge,2026,2,Payroll,15015.0
+Highland Lodge,2026,2,Marketing,3753.75
+Highland Lodge,2026,2,Utilities,3071.25
+Highland Lodge,2026,3,Revenue,34361.25
+Highland Lodge,2026,3,Revenue,14726.25
+Highland Lodge,2026,3,Payroll,19635.0
+Highland Lodge,2026,3,Marketing,4908.75
+Highland Lodge,2026,3,Utilities,4016.25
+Highland Lodge,2026,4,Revenue,42446.25
+Highland Lodge,2026,4,Revenue,18191.25
+Highland Lodge,2026,4,Payroll,24255.0
+Highland Lodge,2026,4,Marketing,6063.75
+Highland Lodge,2026,4,Utilities,4961.25
+Highland Lodge,2026,5,Revenue,48510.0
+Highland Lodge,2026,5,Revenue,20790.0
+Highland Lodge,2026,5,Payroll,27720.0
+Highland Lodge,2026,5,Marketing,6930.0
+Highland Lodge,2026,5,Utilities,5670.0
+Highland Lodge,2026,6,Revenue,56595.0
+Highland Lodge,2026,6,Revenue,24255.0
+Highland Lodge,2026,6,Payroll,32340.0
+Highland Lodge,2026,6,Marketing,8085.0
+Highland Lodge,2026,6,Utilities,6615.0

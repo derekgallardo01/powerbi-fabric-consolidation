@@ -1,0 +1,16 @@
+entity,source_account,category
+Marina Bay Suites,Room Revenue,Revenue
+Marina Bay Suites,F&B Revenue,Revenue
+Marina Bay Suites,Salaries,Payroll
+Marina Bay Suites,Marketing,Marketing
+Marina Bay Suites,Energy,Utilities
+Lakeside Inn,Lodging,Revenue
+Lakeside Inn,Restaurant,Revenue
+Lakeside Inn,Wages,Payroll
+Lakeside Inn,Promo,Marketing
+Lakeside Inn,Utilities,Utilities
+Highland Lodge,Accommodation,Revenue
+Highland Lodge,Food Service,Revenue
+Highland Lodge,Labor,Payroll
+Highland Lodge,Advertising,Marketing
+Highland Lodge,Power,Utilities

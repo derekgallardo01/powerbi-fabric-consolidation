@@ -18,7 +18,9 @@ jobs:
         run: pip install --quiet pytest
       - name: Unit tests
         run: python -m pytest -q
-      - name: Eval harness (numeric + identity checks)
+      - name: Eval harness — campgrounds (3 KOA entities)
         run: python evals/run.py
+      - name: Eval harness — hospitality (3 hotel properties)
+        run: python evals/run.py golden-hospitality.json data-hospitality
       - name: Smoke-test the demo
         run: python run.py

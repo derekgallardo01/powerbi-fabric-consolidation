@@ -74,13 +74,18 @@ Open [`out/dashboard.html`](#) after `python run.py` to view the rendered dashbo
 
 ## Evaluation
 
-Ten numeric / identity checks in [evals/golden.json](evals/golden.json) cover
-entities present, unmapped count, summary ranges, alert counts at thresholds,
-per-entity sum identity, YTD-window monotonicity, and the net identity.
+Two datasets ship in the repo to prove the engine works on more than one
+industry (same code, different chart of accounts and seasonality):
+
+- **Campgrounds** — 3 KOA entities, 10 cases in [evals/golden.json](evals/golden.json) against [data/](data/).
+- **Hospitality** — 3 hotel properties, 11 cases in [evals/golden-hospitality.json](evals/golden-hospitality.json) against [data-hospitality/](data-hospitality/). Hotels run an *unfavourable* budget (variance < 0) — proves the engine flags that direction too.
 
 ```bash
 $ python evals/run.py
-Eval: 10/10 passed (100%)
+Eval (golden.json): 10/10 passed (100%)
+
+$ python evals/run.py golden-hospitality.json data-hospitality
+Eval (golden-hospitality.json): 11/11 passed (100%)
 ```
 
 How to add cases (real-client totals, identities-vs-numbers,

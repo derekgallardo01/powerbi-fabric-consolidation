@@ -1,0 +1,13 @@
+[
+  {"id": "hosp-three-entities", "check": "entities", "expect": ["Highland Lodge", "Lakeside Inn", "Marina Bay Suites"]},
+  {"id": "hosp-all-mapped", "check": "unmapped_count", "expect": 0},
+  {"id": "hosp-ytd-revenue-range", "check": "summary_field", "field": "ytd_revenue", "min": 1000000, "max": 1100000},
+  {"id": "hosp-ytd-net-positive", "check": "summary_field", "field": "ytd_net", "min": 400000},
+  {"id": "hosp-no-alerts-at-default-threshold", "check": "alerts_count", "variance_threshold": 10.0, "expect": 0},
+  {"id": "hosp-alerts-at-tight-threshold", "check": "alerts_count_min", "variance_threshold": 1.0, "min": 1},
+  {"id": "hosp-revenue-positive-yoy", "check": "row_field", "category": "Revenue", "field": "yoy_pct", "min": 0},
+  {"id": "hosp-per-entity-sums-match-consolidated", "check": "per_entity_sums_match_consolidated"},
+  {"id": "hosp-march-ytd-less-than-june-ytd", "check": "march_ytd_less_than_june_ytd"},
+  {"id": "hosp-net-equals-revenue-minus-expenses", "check": "net_equals_revenue_minus_expenses"},
+  {"id": "hosp-revenue-budget-unfavorable", "check": "row_field", "category": "Revenue", "field": "variance_pct", "max": 0}
+]
