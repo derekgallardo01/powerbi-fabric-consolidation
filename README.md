@@ -1,5 +1,7 @@
 # Power BI / Fabric multi-entity consolidation
 
+[![CI](https://github.com/derekgallardo01/powerbi-fabric-consolidation/actions/workflows/ci.yml/badge.svg)](https://github.com/derekgallardo01/powerbi-fabric-consolidation/actions/workflows/ci.yml)
+
 Consolidate several companies with **different charts of accounts** into one
 executive view — MTD, YTD, Budget vs Actual, prior-year comparison, **variance
 alerts**, an **unmapped-account report**, and a **per-entity drill-down** —
