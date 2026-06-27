@@ -1,20 +1,34 @@
 # Power BI / Fabric multi-entity consolidation
 
 Consolidate several companies with **different charts of accounts** into one
-executive view — MTD, YTD, Budget vs Actual, and prior-year comparison — then build
-it for real in Microsoft Fabric / Power BI with the included DAX library.
+executive view — MTD, YTD, Budget vs Actual, prior-year comparison, **variance
+alerts**, an **unmapped-account report**, and a **per-entity drill-down** —
+then build it for real in Microsoft Fabric / Power BI with the included DAX
+library.
 
-The consolidation logic runs fully offline here: `python run.py` ingests three mock
-QuickBooks entities, maps them to one standardized chart, and renders an HTML
-dashboard.
+The consolidation logic runs fully offline here: `python run.py` ingests three
+mock entities, maps them to one standardized chart, renders an HTML dashboard,
+and emits per-entity + unmapped-accounts CSVs the bookkeeper can act on.
+
+```bash
+python run.py                                 # default run → out/dashboard.html + 3 CSVs
+python cli.py --as-of 2026-03                 # earlier reporting period
+python cli.py --variance-threshold 2.5        # tighter alert cutoff
+python evals/run.py                           # 10 numeric eval cases, CI-gating
+python -m pytest -q                           # 10 unit tests
+```
+
+Pure stdlib Python (csv only — no pandas).
 
 ## The problem it solves
 
-An owner runs several entities, each with its own bookkeeping and slightly different
-account names ("Wages" vs "Payroll" vs "Labor"). Getting one consolidated P&L means
-hours of manual spreadsheet work every month, and the numbers never quite tie out.
-This maps every entity to a single standardized chart of accounts and consolidates
-deterministically.
+An owner runs several entities, each with its own bookkeeping and slightly
+different account names ("Wages" vs "Payroll" vs "Labor"). Getting one
+consolidated P&L means hours of manual spreadsheet work every month, and the
+numbers never quite tie out — usually because a new source account quietly
+appeared on one entity's GL and nobody noticed. This maps every entity to a
+single standardized chart, surfaces the unmapped accounts so they get fixed
+instead of dropped, and flags categories whose variance exceeds a threshold.
 
 ```mermaid
 flowchart LR
@@ -23,31 +37,79 @@ flowchart LR
     E3["Entity C accounts"] --> M
     M --> C["Consolidate"]
     C --> R["MTD · YTD · Budget vs Actual · YoY"]
+    M --> U["Unmapped report<br/>(what's missing from the chart)"]
+    C --> A["Variance alerts<br/>(over the threshold)"]
 ```
 
-## Run it
+## Architecture in one paragraph
+
+`load_facts(data_dir)` returns `(facts, unmapped)` — facts are the joined,
+categorised transactions; unmapped is every `(entity, source_account)` combo
+the chart of accounts didn't cover, aggregated by total amount. `build_report`
+computes the executive measures (YTD / MTD / PY / YoY / variance) per category
+and flags rows where `|variance%|` exceeds `variance_threshold` (default 10%);
+`build_per_entity_report` is the drill-down (`{(entity, category): YTD}`).
+`render_html` ties them together in a self-contained dashboard with KPI cards,
+alert banner, per-category table (with ALERT badges), per-entity matrix, and
+unmapped-accounts table. Full diagrams + per-component notes:
+[docs/architecture.md](docs/architecture.md).
+
+## Sample output
+
+```text
+As of 2026-06 | entities: KOA North, KOA Pines, KOA River
+YTD Revenue $732,240 | Expenses $402,732 | Net $329,508
+Variance threshold: +/-10.0%  |  0 unmapped account(s)  |  0 alert(s)
+  Revenue    YTD $   732,240 vs budget +3.1%  YoY +8.0%
+  Payroll    YTD $   274,590 vs budget +3.1%  YoY +8.0%
+  Marketing  YTD $    73,224 vs budget +3.1%  YoY +8.0%
+  Utilities  YTD $    54,918 vs budget +3.1%  YoY +8.0%
+```
+
+Captured run including a tight-threshold alert demo, per-entity matrix, and
+a synthetic unmapped-accounts scenario: [docs/sample-run.txt](docs/sample-run.txt).
+Open [`out/dashboard.html`](#) after `python run.py` to view the rendered dashboard.
+
+## Evaluation
+
+Ten numeric / identity checks in [evals/golden.json](evals/golden.json) cover
+entities present, unmapped count, summary ranges, alert counts at thresholds,
+per-entity sum identity, YTD-window monotonicity, and the net identity.
 
 ```bash
-python run.py                # writes out/dashboard.html + out/consolidated.csv
-python -m pytest -q
+$ python evals/run.py
+Eval: 10/10 passed (100%)
 ```
 
-Sample result: **YTD revenue $732,240**, **+3.1%** vs budget, **+8.0%** YoY, across
-three entities — with MTD, YTD, Budget-vs-Actual and prior-year columns by category.
-Open `out/dashboard.html` to view the rendered dashboard.
+How to add cases (real-client totals, identities-vs-numbers,
+capture-bug-immediately) is in [docs/evaluation.md](docs/evaluation.md).
+
+## Customization
+
+Six typical tuning points — account mapping, reporting period, new category,
+per-category variance thresholds, live source connector (QuickBooks / Xero /
+NetSuite), tying the offline engine to the DAX library — are walked through
+in [docs/customization.md](docs/customization.md).
 
 ## What's inside
 
 | Path | Purpose |
 |------|---------|
-| `generate_data.py` | Builds the three mock entities (deterministic). |
-| `consolidate.py` | The consolidation engine (mapping → facts → measures). |
-| `run.py` | Runs it and renders the HTML dashboard. |
-| `dax-library.md` | The DAX measures (YTD, MTD, PY, YoY, Budget vs Actual) for the real Power BI model. |
-| `account-mapping.example.csv` | Template for mapping a client's accounts to the standard chart. |
+| [generate_data.py](generate_data.py) | Builds the three mock entities (deterministic). |
+| [consolidate.py](consolidate.py) | The engine: `load_facts`, `build_report`, `build_per_entity_report`, `unmapped`, CSV writers. |
+| [run.py](run.py) | Default demo: writes `dashboard.html` + 3 CSVs to `out/`. |
+| [cli.py](cli.py) | `--as-of`, `--variance-threshold`, `--data`, `--out` overrides. |
+| [dax-library.md](dax-library.md) | DAX measures (YTD, MTD, PY, YoY, Budget vs Actual) for the real Power BI / Fabric model. |
+| [account-mapping.example.csv](account-mapping.example.csv) | Template for mapping a client's accounts to the standard chart. |
+| [tests/](tests/) | 10 pytest tests including unmapped, per-entity, threshold, AS_OF window behaviour. |
+| [evals/](evals/) | 10 numeric/identity eval cases + CI-gating runner. |
+| [docs/](docs/) | Architecture, customization, and evaluation guides. |
 
 ## Taking it to a real client
 
-Build the model in Microsoft Fabric / Power BI, refreshing from the client's real
-QuickBooks (or other) companies, using the measures in `dax-library.md` and their
-account mapping. The offline run is the proof of the consolidation logic.
+Build the model in Microsoft Fabric / Power BI, refreshing from the client's
+real QuickBooks (or other) companies, using the measures in
+[dax-library.md](dax-library.md) and their account mapping. The offline run is
+the proof of the consolidation logic — and the unmapped-accounts CSV is what
+you hand the bookkeeper before the first monthly close so the production model
+ties out from day one.

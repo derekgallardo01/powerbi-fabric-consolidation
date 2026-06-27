@@ -13,7 +13,7 @@ from consolidate import (  # noqa: E402
 
 generate_data.main()  # ensure data exists/up to date
 DATA = os.path.join(ROOT, "data")
-FACTS = load_facts(DATA)
+FACTS, UNMAPPED = load_facts(DATA)
 BUDGET = load_budget(DATA)
 REPORT = build_report(FACTS, BUDGET)
 

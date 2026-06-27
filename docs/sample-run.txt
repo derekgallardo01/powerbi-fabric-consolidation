@@ -1,0 +1,27 @@
+
+=== 1. Default run summary (variance threshold +/-10%) ===
+As of 2026-06 | entities: KOA North, KOA Pines, KOA River
+YTD Revenue $732,240 | Expenses $402,732 | Net $329,508
+Unmapped accounts: 0 | Alerts (>10.0%): 0
+  Revenue    YTD $   732,240  vs budget +3.1%  YoY +8.0%
+  Payroll    YTD $   274,590  vs budget +3.1%  YoY +8.0%
+  Marketing  YTD $    73,224  vs budget +3.1%  YoY +8.0%
+  Utilities  YTD $    54,918  vs budget +3.1%  YoY +8.0%
+
+=== 2. Same data with a tight 2% variance threshold (alerts surface) ===
+Alerts at +/-2.0%: 4
+  ALERT  Revenue    +3.1% ($    21,967)
+  ALERT  Payroll    +3.1% ($     8,238)
+  ALERT  Marketing  +3.1% ($     2,197)
+  ALERT  Utilities  +3.1% ($     1,648)
+
+=== 3. Per-entity breakdown (YTD by entity x category) ===
+Entity             Marketing       Payroll       Revenue     Utilities
+KOA North             24,408        91,530       244,080        18,306
+KOA Pines             29,290       109,836       292,896        21,967
+KOA River             19,526        73,224       195,264        14,645
+
+=== 4. Synthetic unmapped-accounts run (one bad source account introduced) ===
+Mapped facts: 1 | Unmapped account groups: 2
+  Acme     WeirdRevenue         $   1,200  (2 tx)
+  Acme     AnotherWeird         $     200  (1 tx)
