@@ -1,0 +1,24 @@
+{
+  "repo": "powerbi-fabric-consolidation",
+  "title": "Power BI / Fabric Consolidation",
+  "tagline": "Multi-entity P&L with unmapped-account report, per-entity drill-down, and variance alerts.",
+  "kicker": "Microsoft Fabric \u00b7 Power BI \u00b7 Capability Demo",
+  "features": [
+    {
+      "label": "Outputs",
+      "value": "Unmapped + per-entity + alerts"
+    },
+    {
+      "label": "Eval cases",
+      "value": "21 numeric / identity"
+    },
+    {
+      "label": "Live demo",
+      "value": "3 dashboards on Pages"
+    }
+  ],
+  "theme": {
+    "primary": "#c97f06",
+    "accent": "#e1ad06"
+  }
+}
