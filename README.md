@@ -24,6 +24,16 @@ python -m pytest -q                           # 10 unit tests
 
 Pure stdlib Python (csv only — no pandas).
 
+## Run in Docker
+
+```bash
+docker build -t powerbi-fabric-consolidation .
+docker run --rm -v $(pwd)/out:/app/out powerbi-fabric-consolidation                                # default run; dashboard.html lands in ./out
+docker run --rm -v $(pwd)/out:/app/out powerbi-fabric-consolidation python cli.py --data data-hospitality   # hospitality variant
+docker run --rm powerbi-fabric-consolidation python evals/run.py                                   # campgrounds eval set
+docker run --rm powerbi-fabric-consolidation python evals/run.py golden-hospitality.json data-hospitality   # hospitality eval set
+```
+
 ## The problem it solves
 
 An owner runs several entities, each with its own bookkeeping and slightly
