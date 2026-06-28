@@ -41,6 +41,14 @@ docker run --rm powerbi-fabric-consolidation python evals/run.py                
 docker run --rm powerbi-fabric-consolidation python evals/run.py golden-hospitality.json data-hospitality   # hospitality eval set
 ```
 
+## Example: production scenario
+
+**[examples/end_to_end_consolidate.py](examples/end_to_end_consolidate.py)** — Multi-entity rollup pipeline: loads two entity datasets, consolidates accounts, computes YTD/MTD + variance vs budget, writes consolidated + unmapped + per-entity CSVs
+
+```bash
+python examples/end_to_end_consolidate.py
+```
+
 ## The problem it solves
 
 An owner runs several entities, each with its own bookkeeping and slightly
