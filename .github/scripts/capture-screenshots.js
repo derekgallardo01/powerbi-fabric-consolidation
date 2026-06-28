@@ -1,0 +1,36 @@
+const { chromium } = require("playwright");
+const fs = require("fs");
+
+const BASE = process.env.DEMO_BASE;
+if (!BASE) { console.error("DEMO_BASE env var is required."); process.exit(1); }
+
+const OUT = "docs/screenshots";
+
+const CAPTURES = [
+  { path: "/",                       name: "01-landing",                fullPage: true  },
+  { path: "/campgrounds/",           name: "02-campgrounds-default",    fullPage: true  },
+  { path: "/campgrounds-tight/",     name: "03-campgrounds-with-alerts", fullPage: true  },
+  { path: "/hospitality/",           name: "04-hospitality",            fullPage: true  },
+  { path: "/campgrounds/",           name: "05-campgrounds-hero",       fullPage: false },
+];
+
+(async () => {
+  fs.mkdirSync(OUT, { recursive: true });
+  const browser = await chromium.launch();
+  const ctx = await browser.newContext({
+    viewport: { width: 1280, height: 800 },
+    deviceScaleFactor: 2,
+  });
+  const page = await ctx.newPage();
+
+  for (const c of CAPTURES) {
+    const url = BASE + c.path;
+    const file = `${OUT}/${c.name}.png`;
+    console.log(`-> ${url}`);
+    await page.goto(url, { waitUntil: "networkidle", timeout: 30000 });
+    await page.screenshot({ path: file, fullPage: c.fullPage });
+    console.log(`   wrote ${file} (${(fs.statSync(file).size / 1024).toFixed(1)} KB)`);
+  }
+
+  await browser.close();
+})().catch((err) => { console.error(err); process.exit(1); });
