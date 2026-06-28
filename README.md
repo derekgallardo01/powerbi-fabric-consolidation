@@ -4,6 +4,11 @@
 
 **Live demo:** [derekgallardo01.github.io/powerbi-fabric-consolidation](https://derekgallardo01.github.io/powerbi-fabric-consolidation/) — three rendered dashboards (campgrounds default, campgrounds with tight variance threshold, and three-hotel hospitality), generated on every push.
 
+[![Live demo preview](docs/screenshots/05-campgrounds-hero.png)](https://derekgallardo01.github.io/powerbi-fabric-consolidation/)
+
+Full dashboards: [Campgrounds (default)](docs/screenshots/02-campgrounds-default.png) · [Campgrounds (tight variance threshold, alerts surfaced)](docs/screenshots/03-campgrounds-with-alerts.png) · [Hospitality (3 hotels, unfavourable budget)](docs/screenshots/04-hospitality.png)
+
+
 Consolidate several companies with **different charts of accounts** into one
 executive view — MTD, YTD, Budget vs Actual, prior-year comparison, **variance
 alerts**, an **unmapped-account report**, and a **per-entity drill-down** —
